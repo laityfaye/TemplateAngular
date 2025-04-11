@@ -1,0 +1,24 @@
+.categories-navs {
+    .nav-item {
+        .nav-link {
+            span {
+                &:nth-child(2) {
+                    @apply opacity-0 invisible;
+                }
+            }
+            &:hover, &.active {
+                @apply border-primary-600 bg-white dark:bg-[#0c1427];
+            }
+            &.active {
+                span {
+                    &:nth-child(1) {
+                        @apply opacity-0 invisible;
+                    }
+                    &:nth-child(2) {
+                        @apply opacity-100 visible;
+                    }
+                }
+            }
+        }
+    }
+}

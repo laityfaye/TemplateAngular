@@ -1,0 +1,22 @@
+.trezo-card {
+    .trezo-card-content {
+        .chat-body {
+            direction: rtl;
+
+            &::-webkit-scrollbar {
+                @apply w-[2px] h-[2px];
+            }
+            &::-webkit-scrollbar-track {
+                @apply bg-white rounded-[50px] dark:bg-[#0C1427];
+            }
+            &::-webkit-scrollbar-thumb {
+                @apply bg-[#B5C3D7] rounded-[50px] dark:bg-[#ffffff1a];
+            }
+            ul {
+                li {
+                    direction: ltr;
+                }
+            }
+        }
+    }
+}

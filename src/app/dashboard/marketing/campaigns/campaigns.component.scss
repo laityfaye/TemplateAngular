@@ -1,0 +1,26 @@
+.campaigns-navs {
+    .nav-item {
+        .nav-link {
+            &.active, &:hover {
+                @apply text-primary-600;
+            }
+        }
+    }
+}
+.navs {
+    .nav-item {
+        .nav-link {
+            &::before {
+                content: '';
+                @apply left-0 right-0 bottom-0 h-[2px] absolute transition-all bg-primary-500 opacity-0;
+            }
+            &.active {
+                @apply text-primary-500;
+
+                &::before {
+                    @apply opacity-100;
+                }
+            }
+        }
+    }
+}

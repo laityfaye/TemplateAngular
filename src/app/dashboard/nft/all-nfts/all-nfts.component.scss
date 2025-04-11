@@ -1,0 +1,15 @@
+::ng-deep {
+    #allNFTSlides {
+        .owl-theme {
+            .owl-nav {
+                [class*=owl-] {
+                    @apply p-0 m-0 -left-[30px] md:-left-[41px] w-[24px] h-[24px] md:w-[30px] md:h-[30px] bottom-[143px] leading-[24px] md:leading-[30px] rounded-full absolute text-white transition-all bg-black hover:bg-primary-500 text-base;
+
+                    &.owl-next {
+                        @apply left-auto -right-[30px] md:-right-[41px];
+                    }
+                }
+            }
+        }
+    }
+}

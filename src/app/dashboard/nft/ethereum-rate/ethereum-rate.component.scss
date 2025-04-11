@@ -1,0 +1,7 @@
+.trezo-card-content {
+    button {
+        &.active, &:hover {
+            @apply bg-primary-500 text-white;
+        }
+    }
+}

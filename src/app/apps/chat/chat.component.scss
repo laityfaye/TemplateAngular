@@ -1,0 +1,63 @@
+.trezo-card {
+    .trezo-card-content {
+        .chat-sidebar-navs {
+            .nav-item {
+                .nav-link {
+                    &::before {
+                        content: '';
+                        @apply absolute ltr:left-0 rtl:right-0 w-[0] bottom-0 h-[2px] transition-all bg-primary-500;
+                    }
+                    &:hover {
+                        @apply text-primary-500;
+
+                        &::before {
+                            @apply w-full;
+                        }
+                    }
+                }
+                &.active {
+                    .nav-link {
+                        @apply text-primary-500;
+
+                        &::before {
+                            @apply w-full;
+                        }
+                    }
+                }
+            }
+        }
+        .chat-sidebar-tab-content {
+            .tab-pane {
+                .chat-users-list {
+                    &::-webkit-scrollbar {
+                        @apply w-[2px] h-[2px];
+                    }
+                    &::-webkit-scrollbar-track {
+                        @apply bg-white rounded-[50px] dark:bg-[#0C1427];
+                    }
+                    &::-webkit-scrollbar-thumb {
+                        @apply bg-[#B5C3D7] rounded-[50px] dark:bg-[#ffffff1a];
+                    }
+                }
+            }
+        }
+        .chat-body {
+            direction: rtl;
+
+            &::-webkit-scrollbar {
+                @apply w-[2px] h-[2px];
+            }
+            &::-webkit-scrollbar-track {
+                @apply bg-white rounded-[50px] dark:bg-[#0C1427];
+            }
+            &::-webkit-scrollbar-thumb {
+                @apply bg-[#B5C3D7] rounded-[50px] dark:bg-[#ffffff1a];
+            }
+            ul {
+                li {
+                    direction: ltr;
+                }
+            }
+        }
+    }
+}

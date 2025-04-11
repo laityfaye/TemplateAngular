@@ -1,0 +1,41 @@
+.overview-navs {
+    .nav-item {
+        .nav-link {
+            &.active {
+                @apply bg-primary-500 text-white;
+
+                h5 {
+                    @apply text-white;
+                }
+                span {
+                    @apply text-white;
+
+                    i {
+                        @apply text-white;
+                    }
+                }
+                img {
+                    @apply hidden;
+
+                    &:last-child {
+                        @apply block;
+                    }
+                }
+            }
+        }
+        &:nth-child(2) {
+            .nav-link {
+                &.active {
+                    @apply bg-purple-500;
+                }
+            }
+        }
+        &:nth-child(3) {
+            .nav-link {
+                &.active {
+                    @apply bg-orange-500;
+                }
+            }
+        }
+    }
+}

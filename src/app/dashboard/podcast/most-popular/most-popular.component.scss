@@ -1,0 +1,9 @@
+.most-popular-navs {
+    .nav-item {
+        .nav-link {
+            &.active, &:hover {
+                @apply text-white bg-primary-500;
+            }
+        }
+    }
+}

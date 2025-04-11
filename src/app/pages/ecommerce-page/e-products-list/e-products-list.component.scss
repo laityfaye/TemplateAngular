@@ -1,0 +1,16 @@
+.trezo-card {
+    .products-list-navs {
+        .nav-item {
+            .nav-link {
+                &:hover {
+                    @apply bg-primary-500 text-white;
+                }
+            }
+            &.active {
+                .nav-link {
+                    @apply bg-primary-500 text-white;
+                }
+            }
+        }
+    }
+}
