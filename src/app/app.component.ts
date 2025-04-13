@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { CommonModule, ViewportScroller } from '@angular/common';
 import { RouterOutlet, Router, Event, NavigationEnd } from '@angular/router';
 
+
 @Component({
     selector: 'app-root',
     imports: [RouterOutlet, CommonModule],

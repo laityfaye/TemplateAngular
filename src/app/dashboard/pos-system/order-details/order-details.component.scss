@@ -1,7 +1,0 @@
-.payment-method {
-    div {
-        &:has(input:checked) {
-            @apply border-primary-500;
-        }
-    }
-}

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
 import { ToggleService } from '../../common/header/toggle.service';
+import { RouterLink } from '@angular/router';
 
 @Component({
     selector: 'app-logout',

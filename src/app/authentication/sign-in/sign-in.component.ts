@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
+import { ToggleService } from '../../common/header/toggle.service';
 import { RouterLink } from '@angular/router';
 import { NgClass } from '@angular/common';
-import { ToggleService } from '../../common/header/toggle.service';
 
 @Component({
     selector: 'app-sign-in',
